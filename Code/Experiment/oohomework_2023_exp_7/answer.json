@@ -1,0 +1,19 @@
+{
+    "1": [
+        "-ask2checkOut(in guestName:String, in roomId:int): void",
+        "+checkOut(in roomId:int): void",
+        "-workerName: String",
+        "Dispatcher",
+        "finishClean",
+        "isCleanOperation()"
+    ],
+    "2": [
+        "DIS_REC_CHECKIN_FAILED",
+        "replyCheckOut(request);",
+        "arrangeClean4CheckOut(request);",
+        "arrangeCleanOnly(Request request)",
+        "RoomState.OCCUPIED",
+        "RequestTag.DIS_CLE_CLEAN_CHECKOUT.equals(request.getRequestTag())"
+    ],
+    "3": "高内聚主要是模块内元素相互依赖，且元素之间交互较少，修改某个元素不会对其他元素造成过多影响。低耦合是指模块间的依赖关系尽量松散，模块间依赖关系少且单向，修改某一模块的实现不会对其他模块造成影响。在我们实验中，其实就是高内聚低耦合的结构，Receptionist、Dispatcher、Cleaner这三个模块内都实现了高内聚，模块间的关系都达到了低耦合。高内聚低耦合可以增强模块的可重用性和移植性"
+}
